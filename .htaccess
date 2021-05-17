@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteRule ^home/? index.php [NC,L]
+RewriteRule ^list/? mangalistesi.php [NC,L]
+RewriteRule ^animerobot/? aramarobotu.php [NC,L]
+RewriteRule ^anime/? manga.php [NC,L]
+RewriteRule ^search/? search.php [NC,L]
+RewriteRule ^robots/? robots.txt [NC,L]

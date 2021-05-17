@@ -1,0 +1,9 @@
+User-Agent: *
+Allow: 
+Disallow: /auth
+Disallow: /admin
+Disallow: /css
+Disallow: /view
+Disallow: /userimg
+
+Sitemap: https://izle.sukebeist.com/sitemap.xml
