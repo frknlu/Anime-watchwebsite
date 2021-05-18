@@ -2,9 +2,13 @@
 include("baglanti.php");
 ob_start();
 session_start();
- 
+/* 
 $kuladmail=$_POST["log"];
 $sifre=$_POST["pwd"];
+sql injection did
+*/
+$kuladmail = $con->real_escape_string($_POST['log']);
+$sifre = $con->real_escape_string($_POST['pwd']);
 
 $msifre=md5($sifre); 
  
@@ -45,7 +49,7 @@ scroll_title();
 <center style='margin-top:100px'>
 <img src='img/banned.png' height='120px'>
     <br>
-    <font color='white' size='21'>Siteye Girişiniz Yasaklanmıştır </font><font color='red' size='30'><b>!</b></font>
+    <font color='white' size='21'>Siteye GiriÃ¾iniz YasaklanmÃ½Ã¾tÃ½r </font><font color='red' size='30'><b>!</b></font>
 <center>
 </center></center></body></html>
 "; 
